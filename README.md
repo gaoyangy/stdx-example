@@ -1,2 +1,2 @@
 # stdx-example
-the example use stdx
+example use stdx
