@@ -1,4 +1,6 @@
 language: node_js
+env:
+  - OS_TYPE=centos OS_VERSION=6
 node_js:
 - 8
 script:
