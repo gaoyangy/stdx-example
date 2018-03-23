@@ -7,6 +7,7 @@
     "t": "npm run lint && npm run lint-sass && npm run build && npm run test",
     "lint": "standard src/** test/**",
     "lint-sass": "standard-sass",
+    "dump": "stdx script/dump.js",
     "build": "rollup -c script/build.js",
     "test": "nyc ava"
   },
