@@ -1,5 +1,6 @@
 import {version} from '../package.json'
 import {isObject} from 'sav-util'
+import Vue from 'vue'
 import App from './App.vue'
 
 /**
@@ -22,3 +23,4 @@ export function log (...args) {
 export {version}
 export {isObject}
 export {App}
+export {Vue}

@@ -50,8 +50,6 @@
   },
   "homepage": "https://github.com/std-tools/stdx-example#readme",
   "devDependencies": {
-    "sav-util": "^1.0.26",
-    "vue": "^2.5.16",
-    "vue-template-compiler": "^2.5.16"
+    "sav-util": "^1.0.26"
   }
 }

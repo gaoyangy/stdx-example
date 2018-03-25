@@ -33,6 +33,14 @@ function createPlugins () {
         IS_REMOVE: true,
       }
     }),
+    {
+      name: 'stdx-resolve',
+      resolveId (id, origin) {
+        if (id.startsWith('vue')) {
+          return require.resolve(id)
+        }
+      }
+    },
     json(),
     vue({
       css: true
@@ -45,7 +53,8 @@ function createPlugins () {
     }),
     commonjs({
       include: [
-        'node_modules/**'
+        'node_modules/**',
+        process.env.ENTRYMODULE + '/**',
       ]
     }),
   ]  
