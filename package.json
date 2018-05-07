@@ -9,7 +9,9 @@
     "lint-sass": "standard-sass",
     "dump": "stdx ./script/dump.js",
     "build": "rollup -c script/build.js",
-    "test": "nyc ava"
+    "test": "nyc ava",
+    "build-pro": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "testApi": "node src/test.api.js"
   },
   "standard": {
     "parser": "babel-eslint",
@@ -50,6 +52,13 @@
   },
   "homepage": "https://github.com/std-tools/stdx-example#readme",
   "devDependencies": {
-    "sav-util": "^1.0.26"
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "sass-loader": "^7.0.1",
+    "sav-util": "^1.0.26",
+    "stdx-mac": "^1.0.32",
+    "style-loader": "^0.21.0",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^15.0.9"
   }
 }
